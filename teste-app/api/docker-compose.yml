@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: node-container
+    build: .
+    command: npm start
+    ports:
+    - 9001:9001
+    volumes:      
+    - .:/home/node/app  
+    

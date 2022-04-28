@@ -1,0 +1,36 @@
+version: '3.9'
+services:     
+  db:
+    container_name: mysql-container
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password    
+    restart: always    
+    environment:
+      MYSQL_ROOT_PASSWORD: admin           
+    volumes:
+      - ./api/db/data:/var/lib/mysql    
+    ports: 
+      - '3306:3306'
+    networks:
+      - backend
+      
+  app:
+    image: node:alpine
+    container_name: node-container  
+    ports: 
+        - 3001:3001      
+    working_dir: "/home/node/app"                                
+    volumes:
+      - ./api:/home/node/app        
+    command: 
+      - sh
+      - -c
+      - |
+        npm install
+        npm start
+    networks:
+      - backend    
+   
+networks:
+  backend:
+    driver: "bridge"  

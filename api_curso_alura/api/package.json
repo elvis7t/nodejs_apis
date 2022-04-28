@@ -1,0 +1,21 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Elvis LEite",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.3",
+    "moment": "^2.29.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "save-dev": "^0.0.1-security"
+  }
+}

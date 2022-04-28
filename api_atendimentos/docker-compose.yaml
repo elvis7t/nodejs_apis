@@ -1,0 +1,69 @@
+version: '3.7'
+services:
+  api:
+    container_name: node-container  
+    image: node:18-alpine
+    ports: 
+        - 3001:3001      
+    working_dir: "/home/node/app"                                
+    volumes:
+      - ./api:/home/node/app        
+    command: 
+      - sh
+      - -c
+      - |
+        npm install
+        npm start
+    networks:
+      - api
+
+  app:
+    container_name: php-container
+    image: php:7.2-apache
+    restart: always
+    volumes:
+      - ./app:/var/www/html    
+    ports:
+      - 8888:80
+    networks:
+      - api   
+
+  mysql:
+    container_name: mysql-container
+    image: mysql:8.0
+    command: mysqld --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always    
+    environment:      
+      MYSQL_ROOT_PASSWORD: root     
+      MYSQL_HOST: localhost
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_user_pass
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"          
+    volumes:
+      - './db/data:/var/lib/mysql'              
+    ports: 
+      - '3306:3306'
+    networks:
+      - api    
+
+  phpmyadmin:
+      container_name: phpmyadmin-container
+      image: phpmyadmin
+      restart: always    
+      links:
+      - mysql    
+      environment:
+        PMA_HOST: mysql
+        PMA_PORT: 3306
+        PMA_ARBITRARY: 1
+      ports:
+        - "8080:80"      
+      depends_on:
+        - mysql
+      networks:  
+        - api  
+
+networks:
+  api:
+    driver: "bridge" 
