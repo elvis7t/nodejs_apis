@@ -1,3 +1,15 @@
+Api REST FUll CRUD Atendimentos
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------
 >_ mkdir api_01
 >_ cd api_01
 >_ mkdir api
