@@ -14,7 +14,8 @@ Api REST FUll CRUD Atendimentos
 >_ cd api_01
 >_ mkdir api
 >_ cd api
->_ npm init
+>_ npm init -y
+>_ npm install -D nodemon
 >_ npm install express
 >_ npm install -- save-dev nodemon
 >_ npm install consign
