@@ -157,3 +157,4 @@ teste-app/nginx/html/nginx/modules
 api_atendimentos/db/data/#ib_16384_0.dblwr
 api_atendimentos/db/data/#ib_16384_1.dblwr
 api_atendimentos/db/data/auto.cnf
+tests/nodejs-tdd-jest
