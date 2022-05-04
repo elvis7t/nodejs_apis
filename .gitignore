@@ -153,3 +153,7 @@ api_atendimentos/db/data/performance_schema/users_144.sdi
 api_atendimentos/db/data/performance_schema/variables_by_thr_183.sdi
 api_atendimentos/db/data/performance_schema/variables_info_186.sdi
 api_atendimentos/db/data/sys/sys_config.ibd
+teste-app/nginx/html/nginx/modules
+api_atendimentos/db/data/#ib_16384_0.dblwr
+api_atendimentos/db/data/#ib_16384_1.dblwr
+api_atendimentos/db/data/auto.cnf
