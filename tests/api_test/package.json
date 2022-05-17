@@ -6,17 +6,26 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js --ignore __tests__",
-    "test": "jest"
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "pg": "^8.7.3",
     "sequelize": "^6.19.0"
   },
   "devDependencies": {
+    "@types/jest": "^27.5.1",
     "jest": "^28.1.0",
     "nodemon": "^2.0.16",
     "sequelize-cli": "^6.4.1",
-    "ts-node": "^10.7.0"
+    "sqlite3": "^5.0.8",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
   }
 }

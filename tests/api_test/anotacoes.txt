@@ -1,6 +1,6 @@
 Link da video-aula
 https://www.youtube.com/watch?v=2G_mWfG0DZE
-https://www.youtube.com/watch?v=2G_mWfG0DZE&t=1983s
+https://www.youtube.com/watch?v=2G_mWfG0DZE&t=3552s
 
 yay -S yarn //instala o yarn o linux/arch
 
@@ -33,5 +33,19 @@ yarn add nodemon -D
 yarn add jest -D
  respostas Y, node, N
 yarn jest --init
+
+//Comandos da ão do problema
+yarn add -D jest typescript ts-jest @types/jest ts-node
+yarn ts-jest config:init
+
+vim .env
+yarn add dotenv
+yarn add sqlite3 -D
+yarn add supertest -D
+mkdir app/controller
+vim app/controller/SessionController.js
+mkdir __tests__/utils
+vim __tests__/utils/truncate.js //percorre todas as tabelas do banco e  deleta os dados
+yarn add bcryptjs //incripta a senha
 
 
