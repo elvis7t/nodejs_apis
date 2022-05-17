@@ -1,0 +1,37 @@
+Link da video-aula
+https://www.youtube.com/watch?v=2G_mWfG0DZE
+https://www.youtube.com/watch?v=2G_mWfG0DZE&t=1983s
+
+yay -S yarn //instala o yarn o linux/arch
+
+yarn init -y // inicia so o node_modules  
+mkdir src
+cd src
+vim server.js
+vim app.js
+vim router.js
+yarn add express
+yarn add sequelize pg
+yarn add sequelize-cli -D 
+yarn sequelize init // inicia o sequelize
+    dps mudar as pastas criadas config, models p/ src
+    cria a src/databse e jogar as pastas migrations e seeders
+cd .. 
+vim .sequelizerc // aloca os arquivos do bd criados acima
+alterar o arquivo em src/config/config.js p/ database.js
+mkdir src/app
+    mover o model/ p/ app
+yarn sequelize migration:create --name=create-users  
+//Configurar o Banco no arquivo criado na pasta migration
+yarn sequelize db:migrate 
+vim app/model/User.js
+vim app/model/Index.js
+node src/server.js
+///////////////////////////Ate aqui migrations
+
+yarn add nodemon -D
+yarn add jest -D
+ respostas Y, node, N
+yarn jest --init
+
+
