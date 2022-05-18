@@ -47,5 +47,9 @@ vim app/controller/SessionController.js
 mkdir __tests__/utils
 vim __tests__/utils/truncate.js //percorre todas as tabelas do banco e  deleta os dados
 yarn add bcryptjs //incripta a senha
+yarn add jsonwebtoken
+vim __tests__/factories.js
+yarn add factory-girl
+yarn add faker // gera dados fakes
 
 
