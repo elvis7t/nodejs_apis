@@ -1,0 +1,6 @@
+curl -i http://localhost:3001/atendimentos
+curl -I http://localhost:3001/atendimentos
+curl  http://localhost:3001/atendimentos //get por padrao
+
+
+curl -X POST -H 'Content-Type' 'application/json' -d '{"pet": "Doginho", "servico": "tosa", "observacoes": "De acordo ao manual do curl ( disponível online [...]"}' https://localhost:3001/atendimentos

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1651671190538" clover="3.2.0">
-  <project timestamp="1651671190538" name="All files">
+<coverage generated="1652881174538" clover="3.2.0">
+  <project timestamp="1652881174538" name="All files">
     <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="17" coveredelements="17" complexity="0" loc="13" ncloc="13" packages="2" files="5" classes="5"/>
     <package name="test">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="modulos_mat.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/test/test/modulos_mat.js">
+      <file name="modulos_mat.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/tests/test-simples/test/modulos_mat.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -15,22 +15,22 @@
     </package>
     <package name="test.calc">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <file name="divide.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/test/test/calc/divide.js">
+      <file name="divide.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/tests/test-simples/test/calc/divide.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
-      <file name="multiply.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/test/test/calc/multiply.js">
+      <file name="multiply.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/tests/test-simples/test/calc/multiply.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
-      <file name="subtract.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/test/test/calc/subtract.js">
+      <file name="subtract.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/tests/test-simples/test/calc/subtract.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
-      <file name="sum.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/test/test/calc/sum.js">
+      <file name="sum.js" path="/home/elsilva/pratica/Nodejs/nodejs_apis/tests/test-simples/test/calc/sum.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
