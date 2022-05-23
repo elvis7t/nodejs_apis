@@ -1,5 +1,5 @@
 
-const lib = require('./modulos_mat')
+const lib = require('../../src/modulos_mat')
 //  import lib from './modulos_mat'
 
 // describe('Test Simplao',  () => {
