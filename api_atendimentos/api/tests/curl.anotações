@@ -1,0 +1,12 @@
+curl -i http://localhost:3001/atendimentos
+curl -I http://localhost:3001/atendimentos
+curl  http://localhost:3001/atendimentos //get por padrao
+
+
+curl -X POST -d '{"cliente=Para&pet=Doginho&servico=tosa&status=agendado&observacoes=obs&data=27/06/2022" }' http://localhost:3001/atendimentos
+curl -X POST -H 'Content-Type' 'application/x-www-form-urlencoded' -d '{"cliente=Para&pet=Doginho&servico=tosa&status=agendado&observacoes&data='27/06/2022'" }' http://localhost:3001/atendimentos
+
+
+curl -d '{"cliente": "Paula", "pet": "Doginho", "servico": "tosa", "status": "agendado", "observacoes": "Muito ziquinha", "data": "22/05/2022"}' -H "Content-Type: application/json" -X POST http://localhost:3001/atendimentos  
+curl -L http://localhost:3001/atendimentos    
+curl -X GET  http://localhost:3001/atendimentos

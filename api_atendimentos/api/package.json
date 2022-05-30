@@ -4,8 +4,11 @@
   "description": "CRUD Produtos",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon ./src/index"
+    "test": "jest --coverage",
+    "start": "nodemon src/index",
+    "live-reload": "nodemon src/index.js",
+    "test:watch": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
+    "test:coverage": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --coverage ./tests"
   },
   "author": "Elvis Leite",
   "license": "ISC",
